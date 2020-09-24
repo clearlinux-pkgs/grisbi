@@ -4,7 +4,7 @@
 #
 Name     : grisbi
 Version  : 1.2.2
-Release  : 1
+Release  : 2
 URL      : https://sourceforge.net/projects/grisbi/files/grisbi%20stable/1.2.x/1.2.2/grisbi-1.2.2.tar.bz2
 Source0  : https://sourceforge.net/projects/grisbi/files/grisbi%20stable/1.2.x/1.2.2/grisbi-1.2.2.tar.bz2
 Summary  : Personal finance manager
