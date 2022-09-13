@@ -4,7 +4,7 @@
 #
 Name     : grisbi
 Version  : 1.2.2
-Release  : 2
+Release  : 3
 URL      : https://sourceforge.net/projects/grisbi/files/grisbi%20stable/1.2.x/1.2.2/grisbi-1.2.2.tar.bz2
 Source0  : https://sourceforge.net/projects/grisbi/files/grisbi%20stable/1.2.x/1.2.2/grisbi-1.2.2.tar.bz2
 Summary  : Personal finance manager
@@ -88,15 +88,15 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1580940304
+export SOURCE_DATE_EPOCH=1663083042
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
 export NM=gcc-nm
-export CFLAGS="$CFLAGS -O3 -ffat-lto-objects -flto=4 "
-export FCFLAGS="$CFLAGS -O3 -ffat-lto-objects -flto=4 "
-export FFLAGS="$CFLAGS -O3 -ffat-lto-objects -flto=4 "
-export CXXFLAGS="$CXXFLAGS -O3 -ffat-lto-objects -flto=4 "
+export CFLAGS="$CFLAGS -O3 -ffat-lto-objects -flto=auto "
+export FCFLAGS="$FFLAGS -O3 -ffat-lto-objects -flto=auto "
+export FFLAGS="$FFLAGS -O3 -ffat-lto-objects -flto=auto "
+export CXXFLAGS="$CXXFLAGS -O3 -ffat-lto-objects -flto=auto "
 %configure --disable-static
 make  %{?_smp_mflags}
 
@@ -105,13 +105,13 @@ export LANG=C.UTF-8
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
-make VERBOSE=1 V=1 %{?_smp_mflags} check
+make %{?_smp_mflags} check
 
 %install
-export SOURCE_DATE_EPOCH=1580940304
+export SOURCE_DATE_EPOCH=1663083042
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/grisbi
-cp %{_builddir}/grisbi-1.2.2/COPYING %{buildroot}/usr/share/package-licenses/grisbi/74a8a6531a42e124df07ab5599aad63870fa0bd4
+cp %{_builddir}/grisbi-%{version}/COPYING %{buildroot}/usr/share/package-licenses/grisbi/74a8a6531a42e124df07ab5599aad63870fa0bd4 || :
 %make_install
 %find_lang grisbi
 
