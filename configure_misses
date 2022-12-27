@@ -1,7 +1,8 @@
 Configure miss: CUnit/Basic.h
 Configure miss: CUnit/Basic.h presence
 Configure miss: CUnit/Basic.h usability
-Configure miss: GOFFICE
-Configure miss: LIBOFX
 Configure miss: MSYS2 platform
 Configure miss: Mac OS X platform
+Configure miss: libcrypto >= 1.0.0
+Configure miss: libgoffice-0.10 >= 0.10.0
+Configure miss: libofx >= 0.9

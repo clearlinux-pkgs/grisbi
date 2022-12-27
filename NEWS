@@ -1,3 +1,29 @@
+New in version 2.0.5
+- Bug fixes
+
+New in version 2.0.4
+- Bug fixes
+
+New in version 2.0.3
+- Bug fixes
+
+New in version 2.0.2
+- Bug fixes
+
+New in version 2.0.1
+- Bug fixes
+
+New in version 2.0.0
+- Automatic integration of dark themes
+- New color management of grisbi
+- Added the ability to change the font size globally
+- Improved use of grisbi with low definition screens
+- Redesign of the credit management module
+- Added import rules for CSV files
+- Added of a search module in the list of operations
+- Added the ability to automatically delete old backups
+- Bugs fix
+
 New in version 1.2.2
 - Bug fixes
 
